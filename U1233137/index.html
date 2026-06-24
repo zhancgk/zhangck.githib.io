@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>張誠愷 | 個人數位品牌</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    font-family:'Noto Sans TC',sans-serif;
+    background:#f8fafc;
+    color:#334155;
+}
+
+/* 導覽列 */
+
+.navbar{
+    background:#0f172a;
+}
+
+.navbar-brand{
+    font-weight:700;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #38bdf8
+    );
+    padding:100px 0;
+    color:white;
+}
+
+.hero img{
+    width:230px;
+    height:230px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid rgba(255,255,255,.25);
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:900;
+}
+
+.hero p{
+    font-size:1.2rem;
+}
+
+/* 卡片 */
+
+.glass-card{
+    background:white;
+    border:none;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.glass-card:hover{
+    transform:translateY(-8px);
+}
+
+/* 標題 */
+
+.section-title{
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:40px;
+}
+
+/* 技能卡 */
+
+.skill-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    height:100%;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+}
+
+.skill-icon{
+    font-size:2rem;
+}
+
+/* 技能進度條 */
+
+.progress{
+    height:12px;
+    border-radius:50px;
+    background:#e2e8f0;
+}
+
+.progress-bar{
+    border-radius:50px;
+}
+
+/* 個人資訊 */
+
+.info-badge{
+    background:#eff6ff;
+    color:#2563eb;
+    padding:10px 18px;
+    border-radius:50px;
+    font-weight:600;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-cpu-fill text-info"></i>
+            個人數位品牌
+        </a>
+
+        <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        關於我
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">
+                        專案作品
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="articles.html">
+                        專業文章
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+
+                <img src="images/profile.jpg" alt="張誠愷">
+
+            </div>
+
+            <div class="col-lg-8">
+
+                <h1>張誠愷</h1>
+
+                <p class="mb-4">
+                    國立聯合大學資訊管理學系三年級
+                </p>
+
+                <div class="d-flex flex-wrap gap-3">
+
+                    <span class="info-badge">
+                        <i class="bi bi-code-slash"></i>
+                        前端開發
+                    </span>
+
+                    <span class="info-badge">
+                        <i class="bi bi-database"></i>
+                        資料庫設計
+                    </span>
+
+                    <span class="info-badge">
+                        <i class="bi bi-graph-up"></i>
+                        系統分析
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="glass-card p-5">
+
+            <h2 class="section-title">
+                <i class="bi bi-person-circle text-primary"></i>
+                關於我
+            </h2>
+
+            <p class="fs-5 lh-lg text-secondary">
+
+                我目前就讀於國立聯合大學資訊管理學系，
+                對於前端網頁開發、資料庫管理以及資訊系統分析充滿熱忱。
+
+                希望透過資訊科技解決生活中的實際問題，
+                並培養兼具技術能力與商業思維的專業素養。
+
+                未來期望投入軟體開發、資訊系統規劃或資料分析相關領域，
+                持續精進自身能力並創造更大的價值。
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="pb-5">
+
+    <div class="container">
+
+        <h2 class="section-title text-center">
+
+            <i class="bi bi-stars text-primary"></i>
+
+            專業技能
+
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon text-success mb-3">
+                        <i class="bi bi-filetype-html"></i>
+                    </div>
+
+                    <h5>HTML / CSS / Bootstrap</h5>
+
+                    <div class="progress mt-3">
+                        <div class="progress-bar bg-success"
+                             style="width:80%">
+                        </div>
+                    </div>
+
+                    <small class="text-muted">80%</small>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon text-info mb-3">
+                        <i class="bi bi-database-fill"></i>
+                    </div>
+
+                    <h5>SQL / MySQL</h5>
+
+                    <div class="progress mt-3">
+                        <div class="progress-bar bg-info"
+                             style="width:75%">
+                        </div>
+                    </div>
+
+                    <small class="text-muted">75%</small>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon text-warning mb-3">
+                        <i class="bi bi-terminal-fill"></i>
+                    </div>
+
+                    <h5>Python / JavaScript</h5>
+
+                    <div class="progress mt-3">
+                        <div class="progress-bar bg-warning"
+                             style="width:70%">
+                        </div>
+                    </div>
+
+                    <small class="text-muted">70%</small>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon text-danger mb-3">
+                        <i class="bi bi-kanban-fill"></i>
+                    </div>
+
+                    <h5>系統分析與專案管理</h5>
+
+                    <div class="progress mt-3">
+                        <div class="progress-bar bg-danger"
+                             style="width:70%">
+                        </div>
+                    </div>
+
+                    <small class="text-muted">70%</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="py-4 text-center">
+
+    <p class="mb-0">
+        © 2026 張誠愷 | 國立聯合大學資訊管理學系
+    </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
